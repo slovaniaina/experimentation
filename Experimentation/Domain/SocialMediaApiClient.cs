@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Experimentation.Domain.ApiDataModel;
-using Experimentation.Domain.Model;
 using Newtonsoft.Json;
 
 namespace Experimentation.Domain
@@ -44,7 +41,7 @@ namespace Experimentation.Domain
 
         #region Private Methods
 
-        private string GetUserApiUrl(string clientName)
+        private static string GetUserApiUrl(string clientName)
         {
             var resultUrl = string.Empty;
 
